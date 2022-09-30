@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Appbanhang</string>
+    <string name="navigation_drawer_open">OpenNavigation</string>
+    <string name="navigation_drawer_close">CloseNavigation</string>
+    <string name="action_them">Thêm</string>
+    <string name="action_xoa">Xóa</string>
+    <string name="action_sua">Sửa</string>
+
+
+</resources>

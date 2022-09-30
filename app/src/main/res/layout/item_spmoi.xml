@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="8dp"
+    android:background="#CEE4EE"
+    android:id="@+id/cardviewspmoi"
+    app:cardCornerRadius="4dp"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:background="@drawable/botron_itemt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_margin="5dp"
+                android:id="@+id/imgsanpham"
+                android:layout_width="100dp"
+                android:layout_height="100dp">
+            </ImageView>
+            <TextView
+                android:textStyle="bold"
+
+                android:gravity="center"
+                android:text="Luân đinh"
+                android:textSize="20dp"
+                android:id="@+id/tvtensanpham"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+            <TextView
+                android:gravity="center"
+                android:layout_marginStart="5dp"
+                android:id="@+id/tvgia"
+                android:textSize="17dp"
+                android:text="Giá"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+        </LinearLayout>
+        <ImageView
+            android:src="@drawable/clipart2079196"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="top|right">
+        </ImageView>
+    </FrameLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:id="@+id/lnsanpham"
+        app:layout_constraintTop_toTopOf="parent"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <ImageView
+            android:layout_margin="5dp"
+            android:id="@+id/imgchitiecsanpham"
+            android:layout_weight="4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+        </ImageView>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tvtenchitiecsanpham"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_margin="3dp"
+                android:text="tên luân"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+            <TextView
+                android:id="@+id/tvgiachitiecsanpham"
+                android:layout_margin="2dp"
+                android:textColor="#CC1111"
+                android:text="gia "
+                android:textSize="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+            <Spinner
+                android:background="@drawable/spinner"
+                android:id="@+id/Spinnersoluong"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="20dp">
+            </Spinner>
+            <Button
+                android:background="@drawable/custom_button_botron"
+                android:id="@+id/btnthemgiohang"
+                android:text="Thêm vào giỏ hàng"
+                android:layout_gravity="center"
+                android:layout_margin="3dp"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content">
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@+id/lnsanpham"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:layout_margin="5dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#222322"
+            android:text="Mô tả chi tiết sản phẩm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </TextView>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_margin="2dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_margin="5dp"
+                android:text="Sadfsadfsfsfsf"
+                android:textSize="15dp"
+                android:id="@+id/tvmotachitiecsanpham"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+        </ScrollView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

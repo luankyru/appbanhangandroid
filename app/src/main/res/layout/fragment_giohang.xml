@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:id="@+id/line1"
+        app:layout_constraintBottom_toTopOf="@+id/line2"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@drawable/cartempty"
+                android:visibility="invisible"
+                android:layout_gravity="center"
+                android:textSize="20dp"
+                android:id="@+id/imggiohangtrong"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </ImageView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:dividerHeight="8dp"
+                android:id="@+id/recycleviewgiohang"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </FrameLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        app:layout_constraintBottom_toTopOf="@+id/btnthanhtoan"
+        android:id="@+id/line2"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_weight="5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:textColor="#E11616"
+                android:text="Tổng tiền:"
+                android:textSize="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_weight="5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:gravity="end"
+                android:id="@+id/tvtongtien"
+                android:layout_gravity="center"
+                android:textColor="#E11616"
+                android:text="Giá trị:"
+                android:textSize="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <Button
+       app:layout_constraintBottom_toTopOf="@id/btntieptucmua"
+        android:background="@drawable/custom_button_botron"
+        android:layout_margin="5dp"
+        android:id="@+id/btnthanhtoan"
+        android:text="Thanh toán giỏ hàng "
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+    </Button>
+    <Button
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        android:background="@drawable/custom_button_botron"
+        android:layout_margin="5dp"
+        android:id="@+id/btntieptucmua"
+        android:text="Tiếp tục mua"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+    </Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

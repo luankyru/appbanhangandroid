@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/layoutitem"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="4dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        style="@style/neumorphirmcard"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_margin="5dp"
+            android:adjustViewBounds="true"
+            android:id="@+id/imgitemlaptop"
+            android:src="@drawable/ic_back"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            >
+        </ImageView>
+        <LinearLayout
+
+            android:orientation="vertical"
+            android:layout_width="260dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:id="@+id/tvitemtenlaptop"
+                android:gravity="center"
+                android:layout_marginStart="5dp"
+                android:textSize="20dp"
+                android:text="Luân dinh thành "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+            <TextView
+                android:textColor="@color/red"
+                android:layout_marginTop="3dp"
+                android:textSize="20dp"
+                android:text="gia gia gia"
+                android:layout_marginStart="5dp"
+                android:id="@+id/tvitemgialaptop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+            <LinearLayout
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="Đánh giá:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                </TextView>
+                <RatingBar
+                    android:layout_marginLeft="12dp"
+                    style = "?android:attr/ratingBarStyleSmall"
+                    android:numStars = "5"
+                    android:rating   = "5"
+                    android:layout_marginStart="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </RatingBar>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

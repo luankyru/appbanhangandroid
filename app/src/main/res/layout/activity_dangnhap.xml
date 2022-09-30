@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    tools:context=".Activity.DangnhapActivity">
+    <FrameLayout
+        android:id="@+id/framecontext"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/linear1"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+        <TextView
+            android:id="@+id/tvdangnhap"
+            android:textStyle="bold"
+            android:textColor="#F44336"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent"
+            android:text="Welcome"
+            android:textSize="30dp"
+            android:layout_height="wrap_content">
+        </TextView>
+        <com.google.android.material.textfield.TextInputLayout
+            app:layout_constraintTop_toBottomOf="@+id/tvdangnhap"
+            android:layout_width="match_parent"
+            android:id="@+id/line1"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:hint="Email"
+                android:textColor="@color/black"
+                android:inputType="textEmailAddress"
+                android:layout_margin="10dp"
+                android:drawablePadding="5dp"
+                android:id="@+id/edtemaildangnhap"
+                android:drawableLeft="@drawable/ic_baseline_email"
+                android:layout_height="wrap_content">
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            app:layout_constraintTop_toBottomOf="@+id/line1"
+            android:layout_width="match_parent"
+            android:id="@+id/line2"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:hint="Password"
+                android:textColor="@color/black"
+                android:inputType="textPassword"
+                android:layout_margin="10dp"
+                android:drawablePadding="5dp"
+                android:id="@+id/edtpassdangnhap"
+                android:drawableLeft="@drawable/ic_baseline_lock_24"
+                android:layout_height="wrap_content">
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+        <androidx.appcompat.widget.AppCompatButton
+
+            android:backgroundTint="#43A047"
+            android:background="@drawable/custom_button_botron"
+            android:text="Đăng nhập"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            app:layout_constraintTop_toBottomOf="@+id/line2"
+            android:id="@+id/btndangnhap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </androidx.appcompat.widget.AppCompatButton>
+        <LinearLayout
+            android:id="@+id/lndangky"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/btndangnhap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_margin="10dp"
+                android:text="Nếu chưa có tài khoản?"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+            <TextView
+                android:id="@+id/tvdangky"
+                android:textColor="#D20D0D"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:text="Đăng ký"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/lndangky"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tvrepsetpass"
+                android:textSize="15dp"
+                android:textColor="#3949AB"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp"
+                android:text="Quên mật khẩu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
